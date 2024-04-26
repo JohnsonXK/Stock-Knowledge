@@ -1,0 +1,71 @@
+body {
+    background: #003d42 url('./assets/resources/bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+#float {
+    width: 100%;
+    height: 80px;
+    background: #003d42; 
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    border-top: 3px solid cyan;
+    border-bottom: 5px solid cyan;
+    align-items: flex-start;
+}
+
+#content {
+    margin-top: 10px;
+}
+
+#logoimg {
+   height: 50px;
+   margin-top: 15px;
+   margin-left: 10px;
+   mix-blend-mode: lighten;
+   }
+#page {
+   float: right;
+   height: 40px;
+   margin-top: 20px;
+   margin-right: 10px;
+}
+
+#home {
+   margin-right: 10px;
+}
+
+#sub {
+   margin-top: 150px;
+   text-align: center;
+   color: cyan;
+   font-size: 2rem;
+}
+#buttons {
+   text-align: center;
+}
+
+button {
+   color: cyan;
+   background-color: #005656;
+   border-color: cyan;
+   border-radius: 30px;
+   border-width: 10px;
+   font-size: 2rem;
+   height: 100px;
+   width: 300px;
+   margin: 10px;
+}
+
+#ver {
+  position: absolute;
+  bottom: 0;
+  color: cyan;
+  font-size: 30px;
+}
