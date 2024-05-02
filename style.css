@@ -64,6 +64,62 @@ button {
    height: 100px;
    width: 300px;
    margin: 10px;
+   background-image: url('./assets/resources/buttonbg.gif');
+   background-blend-mode: lighten;
+   background-size: cover;
+}
+
+#button-wi {
+   color: cyan;
+   background-color: #002b65;
+   border-color: #ff000a;
+   border-radius: 30px;
+   border-width: 10px;
+   font-size: 2rem;
+   height: 100px;
+   width: 300px;
+   margin: 10px;
+   background-image: url('./assets/resources/buttonbg.gif');
+   background-blend-mode: lighten;
+   background-size: cover;
+}
+
+#button-bte {
+   color: cyan;
+   background-color: #002b65;
+   border-color: #26ff00;
+   border-radius: 30px;
+   border-width: 10px;
+   font-size: 2rem;
+   height: 100px;
+   width: 300px;
+   margin: 10px;
+   background-image: url('./assets/resources/buttonbg.gif');
+   background-blend-mode: lighten;
+   background-size: cover;
+}
+
+
+#info-button {
+   color: cyan;
+   background-color: #002b65;
+   border-color: #ff9d00;
+   border-radius: 30px;
+   border-width: 10px;
+   font-size: 2rem;
+   height: 100px;
+   width: 300px;
+   margin: 10px;
+   background-image: url('./assets/resources/buttonbg.gif');
+   background-blend-mode: lighten;
+   background-size: cover;
+}
+
+#wthq {
+   color: cyan;
+   text-align: center;
+   margin-top: 30px;
+   
 }
 
 #ver {
@@ -71,5 +127,12 @@ button {
   bottom: 0;
   color: cyan;
   font-size: 30px;
-    }
-    
+}
+
+.info {
+   background: #00355ad4;
+   border-radius: 2px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   margin: 10px;
+}
