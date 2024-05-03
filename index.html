@@ -1,70 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<title>Login</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  .login-container {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: cyan;
-  }
-  input[type="password"],
-  input[type="submit"] {
-    margin: 10px;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    background: #0035cb;
-    color: cyan;
-    background-blend-mode: difference;
-  }
-  .failure-message {
-    margin-top: 20px;
-    font-style: italic;
-    color: #ff4040;
-    background: #00103e;
-    border-radius: 30px;
-  }
-  .success-message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    font-style: italic;
-    color: #00ffff;
-  }
-  .countdown {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: aqua;
-  }
-</style>
-</head>
-<body>
+const failureMessages = [
+  "Oops! You entered the wrong password.",
+  "Access denied! Try again with the correct password.",
+  "Sorry, that's not the right password. Give it another shot!",
+  "Okay, 1 attempt left.",
+  "Just kidding, keep going!",
+  "Try the developer's name.",
+  "Or maybe his crush's name?",
+  "That might not be his crush's name.",
+  "It starts with the letter P!",
+  "Nah, just kidding, it's not the password.",
+  "This is what it feels like when you play Geometry Dash :)",
+  "Focus.",
+  "Try harder!",
+  "Faster!!! I mean, just try until you succeed!",
+  "Okay, just try his crush's name again.",
+  "Wrong crush name!",
+  "Or maybe she's not really his crush. Any ideas?",
+  "Still not working.",
+  "Hmm, have you tried your course and year?",
+  "No, still not working.",
+  "There are some clues somewhere in the developer's Facebook account; maybe you should check it out.",
+  "Giving up is not a key, it's just a word with the action of failures.",
+  "Okay, and 3...",
+  "2...",
+  "1...",
+  "The password is (comptech2023). HAHAHA!",
+  // Add more failure messages as needed
+];
 
-<div id="pass">
-<div class="login-container">
-  <h2 id="failureMessage">Please Enter The password</h2>
-  <form action="index.html" method="post">
-    <input type="password" name="password" id="passwordInput" placeholder="Password" required>
-    <input type="submit" value="Login">
-  </form>
-  <div class="countdown" id="countdown"></div>
-</div>
+let failureMessageIndex = 0;
 
-<script src="password.js"></script>
-</div>
-</body>
-</html>
+function displayNextFailureMessage() {
+  document.getElementById("failureMessage").textContent = failureMessages[failureMessageIndex];
+  failureMessageIndex = (failureMessageIndex + 1) % failureMessages.length;
+}
+
+function displaySuccessMessage() {
+  document.getElementById("failureMessage").textContent = "Success! Redirecting...";
+  let countdown = 5; // 5-second countdown
+  const countdownElement = document.getElementById("countdown");
+  const countdownInterval = setInterval(() => {
+    countdownElement.textContent = `Redirecting in ${countdown} seconds...`;
+    countdown--;
+    if (countdown < 0) {
+      clearInterval(countdownInterval);
+    }
+  }, 1000);
+}
+
+document.querySelector("form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the form from submitting
+  const password = document.getElementById("passwordInput").value;
+  if (password === "comptech2023") {
+    displaySuccessMessage(); // Display success message with countdown
+    setTimeout(() => {
+      window.location.href = "mainpage.html"; // Redirect to index.html after countdown
+    }, 5000); // 5 seconds delay before redirection
+  } else {
+    displayNextFailureMessage(); // Display next failure message
+  }
+});
