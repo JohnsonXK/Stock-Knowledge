@@ -24,7 +24,8 @@ const failureMessages = [
   "Okay, and 3...",
   "2...",
   "1...",
-  "The password is (comptech2023). 😂!",
+  "Okey just try again.",
+  "Don't give up!",
   // Add more failure messages as needed
 ];
 
