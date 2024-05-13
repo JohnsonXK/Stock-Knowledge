@@ -1,5 +1,5 @@
 body {
-    background: #0A439E url('./assets/resources/bg.gif');
+    background: #00317E url('./assets/resources/bg.gif');
     locked: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,29,101,1) 0%, rgba(43,43,166,1) 4    3%, rgba(0,106,128,1) 100%);    background-size: cover;
     background-position: center;
     background-attachment: fixed;
