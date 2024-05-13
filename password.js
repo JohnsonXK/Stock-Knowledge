@@ -24,7 +24,7 @@ const failureMessages = [
   "Okay, and 3...",
   "2...",
   "1...",
-  "Okey just try again.",
+  "Neehhhh... Just try again",
   "Don't give up!",
   // Add more failure messages as needed
 ];
