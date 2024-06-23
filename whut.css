@@ -54,7 +54,7 @@ h1, h3, h4, h5 {
     text-align: center;
     position: fixed;
     z-index: 100;
-    animation: ehha 3s forwards;
+    animation: ehha 5s forwards;
 }
 @keyframes ehha {
     0% {transform: translateX(0%);}
