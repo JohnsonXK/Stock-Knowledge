@@ -1,0 +1,66 @@
+body {
+   margin: 0;
+   background: linear-gradient(to bottom right, black, gray);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 100vh;
+   color: red;
+   font-size: 3em;
+}
+
+h1, h3, h4, h5 {
+    animation: whuta 3s infinite;
+}
+@keyframes whuta {
+    0% {transform: translateX(0%);}
+    15% {transform: translateX(5%);}
+    30% {transform: translateX(-5%);}
+    45% {transform: translateX(0%);}
+    60% {color: greenyellow;}
+    75% {color: violet;}
+    90% {color: cyan;}
+    100% {color: red;}
+}
+
+.uwu{
+    bottom: 0;
+    position: fixed;
+    margin-left: 30%;
+}
+
+.uwu p {
+    margin: 0;
+    animation: emote 4s infinite;
+}
+@keyframes emote {
+    0% {font-size: 5em;}
+    50% {font-size: 0em;}
+    100% {font-size: 5em;}
+}
+
+.ehh {
+    background: linear-gradient(to right, black, #0000007f);
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    animation: ehha 3s forwards;
+}
+@keyframes ehha {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
+}
+.ehh p {
+    font-size: 10em;
+    margin: 0;
+}
