@@ -10,7 +10,7 @@ body {
    text-align: center;
    height: 100vh;
    color: red;
-   font-size: 5em;
+   font-size: 3em;
 }
 
 h1, h3, h4, h5 {
@@ -61,6 +61,6 @@ h1, h3, h4, h5 {
     100% {transform: translateX(-100%);}
 }
 .ehh p {
-    font-size: 5em;
+    font-size: 3em;
     margin: 0;
 }
