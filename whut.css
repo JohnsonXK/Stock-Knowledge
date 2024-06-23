@@ -38,7 +38,7 @@ h1, h3, h4, h5 {
     animation: emote 4s infinite;
 }
 @keyframes emote {
-    0% {font-size: 5em;}
+    0% {font-size: 3em;}
     50% {font-size: 0em;}
     100% {font-size: 5em;}
 }
